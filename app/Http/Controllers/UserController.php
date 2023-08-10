@@ -19,6 +19,7 @@ class UserController extends Controller
         $user->save();
         return $user;
     }
+    
     function login(Request $req)
     {
        //return "Hello";

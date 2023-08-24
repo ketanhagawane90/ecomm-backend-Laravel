@@ -24,6 +24,7 @@ class ProductController extends Controller
     {
         return Product::all();
     }
+
     function delete($id)
     {
         //return $id;
@@ -36,5 +37,11 @@ class ProductController extends Controller
         {
             return["result"=>"Operation failed"];
         }
+    }
+
+    function getProduct($id)
+    {
+        //return $id;
+        return Product::find($id);
     }
 }
